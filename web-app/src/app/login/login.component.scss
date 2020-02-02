@@ -48,34 +48,39 @@
               background-color: white;
               font-size: 0.7em;
               border: none;
-              p{
-                  color:grey;
-                  margin:5px 0 0 3px;
+              p {
+                color: grey;
+                margin: 5px 0 0 3px;
               }
             }
             input {
-                border:none;
-                height:100%;
-                width: 97%;
-                font-size: 1.2em;
-                padding: 0 0 0 3%;
+              border: none;
+              height: 100%;
+              width: 97%;
+              font-size: 1.2em;
+              padding: 0 0 0 3%;
             }
           }
         }
       }
       button {
         width: auto;
-        margin-left: 75%;
+        margin-left: 74%;
         background-color: transparent;
         border: none;
         color: white;
         font-size: 1em;
         cursor: pointer;
+
+        &:hover{
+          font-size:1.1em;
+          margin-left:73%;
+        	transition: 0.3s;
+        }
       }
     }
   }
   .logo {
-
     border-left: #580000 solid 2px;
     height: 100vh;
   }
