@@ -1,0 +1,42 @@
+<div class="definicion-login-m">
+  <div class="login_tarjeta">
+    <div class="logo">
+      <img
+        src="../../assets/images/logo.png"
+        alt="Logo del Gobierno de Puebla"
+        class="main"
+      />
+      <img
+        class="secondary"
+        src="../../assets/images/logo-text.png"
+        alt="Descripcion"
+      />
+    </div>
+    <div class="campos">
+      <div class="campo">
+        <div class="tip"></div>
+        <div class="input">
+          <div class="descripcion"><p>EMAIL</p></div>
+          <input type="email" />
+          <p class="message" style="padding:0"></p>
+        </div>
+      </div>
+      <div class="campo">
+        <div class="tip"></div>
+        <div class="input">
+          <div class="descripcion"><p>PASSWORD</p></div>
+          <input type="password" />
+          <button class="message">¿Olvidaste tu contraseña?</button>
+        </div>
+      </div>
+    </div>
+    <button
+      class="login-button"
+      [routerLink]="['/login']"
+      routerLinkActive="router-link-active"
+    >
+      <h4>LOGIN</h4>
+      <img src="../../assets/icons/login.svg" alt="login logo" />
+    </button>
+  </div>
+</div>

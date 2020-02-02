@@ -1,0 +1,143 @@
+@import "../../styles.scss";
+
+.definicion-login-m {
+  background-color: $cafe;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  .login_tarjeta {
+    padding: 1em;
+    border-radius: 0.7em;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    height: 455px;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    width: 300px;
+    .logo {
+      margin: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      margin-bottom: 75px;
+      img.main {
+        margin: 20px 0;
+        width: 254px;
+        height: 95px;
+        align-self: center;
+        // width:auto;
+      }
+      img.secondary {
+        width: 100px;
+        margin-left: 23px;
+      }
+    }
+
+    // .campos{
+
+    // }
+    // button{
+    //     height:30px;
+    // }
+
+    .campos {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .campo {
+        padding: 0 0 25px;
+        // border-radius: .5em;
+        box-shadow: -3px -3px 3px 0 #ffffff, 3px 3px 3px 0 $cafe;
+        width: 70%;
+        height: 25px;
+        display: flex;
+        flex-direction: row;
+        margin: auto auto 25px;
+
+        .tip {
+          background-color: $rosa;
+          height: 50px;
+          width: 5px;
+        }
+        .input {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          margin: 0;
+          .descripcion {
+            background-color: #f1f1f1;
+            font-size: 0.7em;
+            border: none;
+            p {
+              color: $gris;
+              margin: 2px 0 5px 3px;
+            }
+          }
+          input {
+            border: none;
+            height: 22px;
+            background-color: #f1f1f1;
+            width: 97%;
+            font-size: 0.8em;
+            padding: 0 0 0 3%;
+          }
+          .message {
+            border: 0;
+            color: $gris;
+            background-color: #f1f1f1;
+            height: 11px;
+            width: 100%;
+            font-size: 0.6em;
+            text-align: right;
+            padding: 0;
+            margin: 0;
+            padding-left: 80px;
+          }
+        }
+      }
+    }
+
+    button {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      width: auto;
+      margin: 0 0 0 150px;
+      background-color: transparent;
+      border: none;
+      color: $cafe;
+      cursor: pointer;
+
+      h4 {
+        margin: 0;
+        margin-right: 5px;
+        font-size: 0.9em;
+        font-weight: 800;
+      }
+
+      img {
+        height: 20px;
+        width: 20px;
+        &:hover {
+          height: 21px;
+          width: 21px;
+          transition: 0.3s;
+        }
+      }
+
+      &:hover {
+        font-size: 0.9em;
+        margin-left: 150px;
+        transition: 0.3s;
+      }
+    }
+  }
+}
