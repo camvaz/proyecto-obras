@@ -1,4 +1,4 @@
-@import "../css/general.scss";
+@import "../../styles.scss";
 
 .definicion-header {
   width: 100%;
@@ -10,6 +10,7 @@
     height: 90px;
     display: flex;
     flex-direction: row;
+    margin-bottom: 20px;
     .botones {
       display: flex;
       flex-direction: row;
@@ -23,10 +24,10 @@
           width: 40px;
           height: 40px;
           margin: auto;
-          background-color: #c3311a;
+          background-color: $cafe;
         }
         h4 {
-          color: #c3311a;
+          color: $cafe;
           margin: 5px 0;
         }
       }
@@ -41,7 +42,7 @@
   }
 
   .secondary-nav {
-    background-color: #c3311a;
+    background-color: $cafe;
     height: 50px;
     display: flex;
     flex-direction: row;
@@ -55,7 +56,7 @@
       width: 400px;
       color: white;
       border: 0;
-      background-color: #c3311a;
+      background-color: $cafe;
       height: 50px;
       font-size: 1.4em;
       margin: 0;
@@ -66,9 +67,9 @@
     }
     .logout {
       width: 10%;
+      background-color: $cafe;
       h3 {
         height: 30px;
-        margin: 10px;
         color: white;
       }
     }
