@@ -8,6 +8,7 @@
           <div class="input">
             <div class="descripcion"><p>EMAIL</p></div>
             <input type="email" />
+            <p class="message" style="padding:0"></p>
           </div>
         </div>
         <div class="campo">
@@ -15,9 +16,10 @@
           <div class="input">
             <div class="descripcion"><p>PASSWORD</p></div>
             <input type="password" />
+            <button class="message">¿Olvidaste tu contraseña? </button>
           </div>
         </div>
-      </div>
+       </div>
       <button class="login-button" [routerLink]="['/login']" routerLinkActive="router-link-active" >
         <h4>LOGIN</h4>
         <img src="../../assets/icons/login.svg" alt="login logo">
