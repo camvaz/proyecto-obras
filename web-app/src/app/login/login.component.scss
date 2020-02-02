@@ -64,19 +64,38 @@
         }
       }
       button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
         width: auto;
-        margin-left: 73%;
+        margin: 0 0 0 66%;
         background-color: transparent;
         border: none;
         color: white;
-        font-size: 1em;
-        font-weight: 800;
         cursor: pointer;
 
-        &:hover{
-          font-size:1.1em;
-          margin-left:72%;
-        	transition: 0.3s;
+        h4 {
+          margin: 0;
+          margin-right: 5px;
+          font-size: 1.2em;
+          font-weight: 800;
+        }
+
+        img {
+          height: 30px;
+          width: 30px;
+          &:hover {
+            height: 30px;
+            width: 30px;
+            transition: 0.3s;
+          }
+        }
+
+        &:hover {
+          font-size: 0.9em;
+          margin-left: 66.5%;
+          transition: 0.3s;
         }
       }
     }
