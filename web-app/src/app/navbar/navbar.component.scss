@@ -1,1 +1,76 @@
 @import "../css/general.scss";
+
+.definicion-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .primary-nav {
+    background-color: white;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    .botones {
+      display: flex;
+      flex-direction: row;
+      width: 13%;
+      .boton {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 30px;
+        width: auto;
+        .icono {
+          width: 40px;
+          height: 40px;
+          margin: auto;
+          background-color: #c3311a;
+        }
+        h4 {
+          color: #c3311a;
+          margin: 5px 0;
+        }
+      }
+    }
+    .logo {
+      width: 80%;
+      height: 90px;
+    }
+    .texto {
+      width: 10%;
+    }
+  }
+
+  .secondary-nav {
+    background-color: #c3311a;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    .lupa {
+      width: 60px;
+      height: 50px;
+      margin: 0 10px;
+      background-color: white;
+    }
+    input {
+      width: 400px;
+      color: white;
+      border: 0;
+      background-color: #c3311a;
+      height: 50px;
+      font-size: 1.4em;
+      margin: 0;
+      padding: 0;
+      &::placeholder {
+        color: white;
+      }
+    }
+    .logout {
+      width: 10%;
+      h3 {
+        height: 30px;
+        margin: 10px;
+        color: white;
+      }
+    }
+  }
+}
