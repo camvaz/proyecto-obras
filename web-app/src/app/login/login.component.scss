@@ -52,7 +52,7 @@
               font-size: 0.7em;
               border: none;
               p {
-                color: grey;
+                color: $gris;
                 margin: 2px 0 0 3px;
               }
             }
@@ -65,7 +65,7 @@
             }
             .message{
               border:0;
-              color:grey;
+              color:$gris;
               background-color:white;
                height:11px;
               width:100%;
