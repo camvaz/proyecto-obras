@@ -22,8 +22,8 @@
       width: 50%;
       .user-img {
         border-radius: 200px;
-        height: 300px;
-        width: 300px;
+        height: 150px;
+        width: 150px;
         margin: auto auto 50px;
         background-color: #ffffff;
       }
@@ -33,13 +33,13 @@
         flex-direction: column;
         .campo {
           width: 70%;
-          height: 70px;
+          height: 50px;
           display: flex;
           flex-direction: row;
           margin: auto auto 25px;
           .tip {
             background-color: $rosa;
-            height: 70px;
+            height: 50px;
             width: 10px;
           }
           .input {
@@ -72,7 +72,7 @@
         justify-content: center;
         align-content: center;
         width: auto;
-        margin: 0 0 0 66%;
+        margin: 0 0 0 64%;
         background-color: transparent;
         border: none;
         color: white;
@@ -81,23 +81,23 @@
         h4 {
           margin: 0;
           margin-right: 5px;
-          font-size: 1.2em;
+          font-size: 1.1em;
           font-weight: 800;
         }
 
         img {
-          height: 30px;
-          width: 30px;
+          height: 20px;
+          width: 20px;
           &:hover {
-            height: 30px;
-            width: 30px;
+            height: 21px;
+            width: 21px;
             transition: 0.3s;
           }
         }
 
         &:hover {
           font-size: 0.9em;
-          margin-left: 66.5%;
+          margin-left: 63.5%;
           transition: 0.3s;
         }
       }
