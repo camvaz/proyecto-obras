@@ -33,6 +33,8 @@ input,
 button {
 	outline: none;
 }
+$tablet: "only screen and (max-width : 900px)";
+$mobile: "only screen and (max-width : 500px)";
 
 // // button{
 // // &:hover{

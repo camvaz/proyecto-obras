@@ -6,6 +6,9 @@
   margin: 0;
   display: flex;
   flex-direction: row;
+  @media #{$tablet}{
+    flex-direction: column;
+  }
   .login {
     background-color: $cafe;
     height: 100vh;
