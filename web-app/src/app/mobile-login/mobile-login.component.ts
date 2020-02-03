@@ -1,15 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 
 @Component({
-  selector: 'app-mobile-login',
-  templateUrl: './mobile-login.component.html',
-  styleUrls: ['./mobile-login.component.scss']
+  selector: "app-mobile-login",
+  templateUrl: "./mobile-login.component.html",
+  styleUrls: ["./mobile-login.component.scss"]
 })
 export class MobileLoginComponent implements OnInit {
+  constructor(private router: Router) {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
+  login() {
+    document.querySelector("#tarjeta").classList.add("slideOutUp");
+    setInterval(() => {
+      this.router.navigate(["/login"]);
+    }, 400);
   }
 
+  ngOnDestroy() {}
 }
