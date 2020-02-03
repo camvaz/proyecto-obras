@@ -13,7 +13,7 @@ export class MobileLoginComponent implements OnInit {
 
   login() {
     document.querySelector("#tarjeta").classList.add("slideOutUp");
-    setInterval(() => {
+    setTimeout(() => {
       this.router.navigate(["/login"]);
     }, 400);
   }
