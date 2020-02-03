@@ -1,1 +1,30 @@
-<p>page-proyectos works!</p>
+<div class="definicion-proyectos">
+  <h1 class="titulo">Proyectos actuales</h1>
+  <div class="tabla-container">
+
+    <table>
+      <tr>
+        <th *ngFor="let item of tableHeaders">{{ item }}</th>
+      </tr>
+      <tr *ngFor="let obra of obras">
+        <td>{{ obra.id }}</td>
+        <td>{{ obra.numObra }}</td>
+        <td>{{ obra.nombre }}</td>
+        <td>{{ obra.ubicacion }}</td>
+        <td>{{ obra.ejercicioFiscal }}</td>
+        <td>{{ obra.programa }}</td>
+        <td>{{ obra.responsable }}</td>
+        <td>{{ obra.progreso }}</td>
+      </tr>
+    </table>
+  </div>
+  <div class="pages">
+      <div class="left"></div>
+      <div class="choices">
+          <a >1</a>
+          <a >2</a>
+          <a >3</a>
+      </div>
+      <div class="right"></div>
+  </div>
+</div>
