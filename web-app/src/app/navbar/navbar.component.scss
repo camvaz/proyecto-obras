@@ -61,10 +61,10 @@
       width: 60px;
       height: 50px;
       margin: 0 10px;
-      background-color: white;
+      background-color: $cafe;
     }
     input {
-      width: 85vw;
+      width: 86vw;
       color: white;
       border: 0;
       background-color: $cafe;
@@ -77,9 +77,10 @@
       }
     }
     .logout {
-      width: 10%;
+      width: 8vw;
       background-color: $cafe;
       h3 {
+        font-size: 1em;
         margin:10px 0;
         height: 30px;
         color: white;
