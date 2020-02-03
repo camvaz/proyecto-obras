@@ -1,11 +1,18 @@
-import { Component } from '@angular/core';
-import {LoginComponent } from './login/login.component';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.scss"]
 })
 export class AppComponent {
-  title = 'web-app';
+  title = "web-app";
+  baseURL: string;
+  ngOnInit() {
+    this.baseURL = window.location.pathname;
+  }
+
+  ngDoCheck() {
+    this.baseURL = window.location.pathname;
+  }
 }

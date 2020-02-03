@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 import { Router } from "@angular/router";
 
 @Component({
@@ -6,6 +6,7 @@ import { Router } from "@angular/router";
   templateUrl: "./mobile-login.component.html",
   styleUrls: ["./mobile-login.component.scss"]
 })
+
 export class MobileLoginComponent implements OnInit {
   constructor(private router: Router) {}
 

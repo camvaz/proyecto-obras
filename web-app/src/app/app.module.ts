@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { ComponentesResueltosComponent } from './componentes-resueltos/componentes-resueltos.component';
 import { MobileLoginComponent } from './mobile-login/mobile-login.component';
+import { PageProyectosComponent } from './page-proyectos/page-proyectos.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MobileLoginComponent } from './mobile-login/mobile-login.component';
     NavbarComponent,
     LoginComponent,
     ComponentesResueltosComponent,
-    MobileLoginComponent
+    MobileLoginComponent,
+    PageProyectosComponent
   ],
   imports: [
     BrowserModule,
