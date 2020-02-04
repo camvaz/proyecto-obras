@@ -19,9 +19,14 @@
     table{
         tr{
             th{
-
+                border-bottom: solid black 1px;
+                padding-bottom: 10px;
             }
+            
             td{
+                &.title-table{
+                    border-right: solid black 1px;
+                }
                 padding:20px 0;
                 img{
                     width:20px;
@@ -32,9 +37,12 @@
             }
             .progreso{
                 width:20px;
-                height:10px;
+                height:15px;
                 margin:20px 0;
                 background-color: $rosa;
+                color:$blanco;
+                font-size:0.6em;
+                text-align: center;
             }
         }
     }

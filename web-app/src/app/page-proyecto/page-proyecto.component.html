@@ -18,7 +18,7 @@
       <th>Progreso</th>
     </tr>
     <tr>
-      <td>Planeacion</td>
+      <td class="title-table">Planeacion</td>
       <td *ngFor="let doc of proyecto.planeacion">
         <ng-template [ngIf]="doc === 1">
           <img src="../../assets/icons/file.svg" alt="File" />
@@ -27,11 +27,11 @@
           <img src="../../assets/icons/close.svg" alt="File" />
         </ng-template>
       </td>
-      <div class="progreso" [style.width.%]="this.progresos[0]"></div>
+      <div class="progreso" [style.width.%]="this.progresos[0]"> {{this.progresos[0]}}%</div>
     </tr>
 
     <tr>
-      <td>Relaciones Institucionales</td>
+      <td class="title-table">Relaciones Institucionales</td>
       <td *ngFor="let doc of proyecto.planeacion">
         <ng-template [ngIf]="doc === 1">
           <img src="../../assets/icons/file.svg" alt="File" />
@@ -40,10 +40,10 @@
           <img src="../../assets/icons/close.svg" alt="File" />
         </ng-template>
       </td>
-      <div class="progreso" [style.width.%]="this.progresos[1]"></div>
+      <div class="progreso" [style.width.%]="this.progresos[1]">{{this.progresos[1]}}%</div>
     </tr>
     <tr>
-      <td>Gestion administrativa</td>
+      <td class="title-table">Gestion administrativa</td>
       <td *ngFor="let doc of proyecto.planeacion">
         <ng-template [ngIf]="doc === 1">
           <img src="../../assets/icons/file.svg" alt="File" />
@@ -52,10 +52,10 @@
           <img src="../../assets/icons/close.svg" alt="File" />
         </ng-template>
       </td>
-      <div class="progreso" [style.width.%]="this.progresos[2]"></div>
+      <div class="progreso" [style.width.%]="this.progresos[2]">{{this.progresos[2]}}%</div>
     </tr>
     <tr>
-      <td>Proyectos</td>
+      <td class="title-table">Proyectos</td>
       <td *ngFor="let doc of proyecto.planeacion">
         <ng-template [ngIf]="doc === 1">
           <img src="../../assets/icons/file.svg" alt="File" />
@@ -64,10 +64,10 @@
           <img src="../../assets/icons/close.svg" alt="File" />
         </ng-template>
       </td>
-      <div class="progreso" [style.width.%]="this.progresos[3]"></div>
+      <div class="progreso" [style.width.%]="this.progresos[3]">{{this.progresos[3]}}%</div>
     </tr>
     <tr>
-      <td>Costos</td>
+      <td class="title-table">Costos</td>
       <td *ngFor="let doc of proyecto.planeacion">
         <ng-template [ngIf]="doc === 1">
           <img src="../../assets/icons/file.svg" alt="File" />
@@ -76,7 +76,7 @@
           <img src="../../assets/icons/close.svg" alt="File" />
         </ng-template>
       </td>
-      <div class="progreso" [style.width.%]="this.progresos[4]"></div>
+      <div class="progreso" [style.width.%]="this.progresos[4]">{{this.progresos[4]}}%</div>
     </tr>
   </table>
   <div class="pages">
