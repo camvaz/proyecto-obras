@@ -54,12 +54,12 @@
 
   .secondary-nav {
     background-color: $cafe;
-    height: 50px;
+    height: 40px;
     display: flex;
     flex-direction: row;
     .lupa {
       width: 60px;
-      height: 50px;
+      height: 40px;
       margin: 0 10px;
       background-color: $cafe;
     }
@@ -68,8 +68,8 @@
       color: white;
       border: 0;
       background-color: $cafe;
-      height: 50px;
-      font-size: 1.4em;
+      height: 40px;
+      font-size: 1.2em;
       margin: 0;
       padding: 0;
       &::placeholder {
