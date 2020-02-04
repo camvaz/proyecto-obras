@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { ComponentesResueltosComponent } from './componentes-resueltos/componentes-resueltos.component';
 import { MobileLoginComponent } from './mobile-login/mobile-login.component';
 import { PageProyectosComponent } from './page-proyectos/page-proyectos.component';
+import { PageProyectoComponent } from './page-proyecto/page-proyecto.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PageProyectosComponent } from './page-proyectos/page-proyectos.componen
     LoginComponent,
     ComponentesResueltosComponent,
     MobileLoginComponent,
-    PageProyectosComponent
+    PageProyectosComponent,
+    PageProyectoComponent
   ],
   imports: [
     BrowserModule,

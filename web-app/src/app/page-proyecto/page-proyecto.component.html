@@ -1,0 +1,91 @@
+<div class="definicion-proyecto animated fadeIn faster">
+  <h1 class="titulo-1">{{ proyecto.nombre }}</h1>
+  <h3 class="titulo-2">Documentos</h3>
+  <table>
+
+    <tr>
+      <th>Departamentos</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>10</th>
+      <th>Progreso</th>
+    </tr>
+    <tr>
+      <td>Planeacion</td>
+      <td *ngFor="let doc of proyecto.planeacion">
+        <ng-template [ngIf]="doc === 1">
+          <img src="../../assets/icons/file.svg" alt="File" />
+        </ng-template>
+        <ng-template [ngIf]="doc === 0">
+          <img src="../../assets/icons/close.svg" alt="File" />
+        </ng-template>
+      </td>
+      <div class="progreso" [style.width.%]="this.progresos[0]"></div>
+    </tr>
+
+    <tr>
+      <td>Relaciones Institucionales</td>
+      <td *ngFor="let doc of proyecto.planeacion">
+        <ng-template [ngIf]="doc === 1">
+          <img src="../../assets/icons/file.svg" alt="File" />
+        </ng-template>
+        <ng-template [ngIf]="doc === 0">
+          <img src="../../assets/icons/close.svg" alt="File" />
+        </ng-template>
+      </td>
+      <div class="progreso" [style.width.%]="this.progresos[1]"></div>
+    </tr>
+    <tr>
+      <td>Gestion administrativa</td>
+      <td *ngFor="let doc of proyecto.planeacion">
+        <ng-template [ngIf]="doc === 1">
+          <img src="../../assets/icons/file.svg" alt="File" />
+        </ng-template>
+        <ng-template [ngIf]="doc === 0">
+          <img src="../../assets/icons/close.svg" alt="File" />
+        </ng-template>
+      </td>
+      <div class="progreso" [style.width.%]="this.progresos[2]"></div>
+    </tr>
+    <tr>
+      <td>Proyectos</td>
+      <td *ngFor="let doc of proyecto.planeacion">
+        <ng-template [ngIf]="doc === 1">
+          <img src="../../assets/icons/file.svg" alt="File" />
+        </ng-template>
+        <ng-template [ngIf]="doc === 0">
+          <img src="../../assets/icons/close.svg" alt="File" />
+        </ng-template>
+      </td>
+      <div class="progreso" [style.width.%]="this.progresos[3]"></div>
+    </tr>
+    <tr>
+      <td>Costos</td>
+      <td *ngFor="let doc of proyecto.planeacion">
+        <ng-template [ngIf]="doc === 1">
+          <img src="../../assets/icons/file.svg" alt="File" />
+        </ng-template>
+        <ng-template [ngIf]="doc === 0">
+          <img src="../../assets/icons/close.svg" alt="File" />
+        </ng-template>
+      </td>
+      <div class="progreso" [style.width.%]="this.progresos[4]"></div>
+    </tr>
+  </table>
+  <div class="pages">
+    <div class="left"></div>
+    <div class="choices">
+      <a>1</a>
+      <a>2</a>
+      <a>3</a>
+    </div>
+    <div class="right"></div>
+  </div>
+</div>
