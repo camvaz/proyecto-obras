@@ -54,21 +54,21 @@
 
   .secondary-nav {
     background-color: $cafe;
-    height: 40px;
+    height: 30px;
     display: flex;
     flex-direction: row;
     .lupa {
       width: 60px;
-      height: 40px;
+      height: 30px;
       margin: 0 10px;
       background-color: $cafe;
     }
     input {
-      width: 86vw;
+      width: 84vw;
       color: white;
       border: 0;
       background-color: $cafe;
-      height: 40px;
+      height: 30px;
       font-size: 1.2em;
       margin: 0;
       padding: 0;
@@ -81,7 +81,7 @@
       background-color: $cafe;
       h3 {
         font-size: 1em;
-        margin:10px 0;
+        margin:3px 0;
         height: 30px;
         color: white;
       }
