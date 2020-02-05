@@ -11,6 +11,7 @@ import { PageProyectosComponent } from './page-proyectos/page-proyectos.componen
 import { PageProyectoComponent } from './page-proyecto/page-proyecto.component';
 import { FormCrearProyectoComponent } from './form-crear-proyecto/form-crear-proyecto.component';
 import { VistaSubirArchivosComponent } from './vista-subir-archivos/vista-subir-archivos.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { VistaSubirArchivosComponent } from './vista-subir-archivos/vista-subir-
     PageProyectosComponent,
     PageProyectoComponent,
     FormCrearProyectoComponent,
-    VistaSubirArchivosComponent
+    VistaSubirArchivosComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

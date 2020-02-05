@@ -5,6 +5,7 @@ import { PageProyectosComponent } from "./page-proyectos/page-proyectos.componen
 import { PageProyectoComponent } from "./page-proyecto/page-proyecto.component";
 import { FormCrearProyectoComponent } from "./form-crear-proyecto/form-crear-proyecto.component";
 import { VistaSubirArchivosComponent} from "./vista-subir-archivos/vista-subir-archivos.component";
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   // {path:'', component:LoginComponent},
@@ -12,7 +13,8 @@ const routes: Routes = [
   { path: "proyectos", component: PageProyectosComponent },
   { path: "proyecto", component: PageProyectoComponent },
   { path: "crear-proyecto", component: FormCrearProyectoComponent },
-  { path: "subir-archivos", component: VistaSubirArchivosComponent}
+  { path: "subir-archivos", component: VistaSubirArchivosComponent},
+  { path: "home", component: HomeComponent}
 ];
 
 @NgModule({
