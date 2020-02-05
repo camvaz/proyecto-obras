@@ -49,26 +49,26 @@
   }
   .grid-form {
     display: grid;
-    grid-template-columns: 40% 40%;
-    width: 70%;
+    grid-template-columns: 30% 30% 30%;
+    width: 80%;
     margin: auto;
-    grid-column-gap: 20%;
+    grid-column-gap: 5%;
   }
-  .button-container{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        margin: 50px 0;
-      button {
-        background-color: white;
-        color:$rojo;
-        border-color: transparent;
-        margin:auto;
-        width:180px;
-        height:30px;
-        border-radius: 3px;
-        // border-radius: .5em;
-        box-shadow: -3px -3px 3px 0 #ffffff, 3px 3px 3px 0 $rojo;
-      }
+  .button-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+    button {
+      background-color: white;
+      color: $rojo;
+      border-color: transparent;
+      margin: auto;
+      width: 180px;
+      height: 30px;
+      border-radius: 3px;
+      // border-radius: .5em;
+      box-shadow: -3px -3px 3px 0 #ffffff, 3px 3px 3px 0 $rojo;
+    }
   }
 }
