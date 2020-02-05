@@ -1,1 +1,19 @@
-<p>home works!</p>
+<div class="definicion-home">
+    <h1>Lista de Proyectos</h1>
+    <div class="proyectos">
+        <button>Todos</button>
+        <button>Por empleado</button>
+    </div>
+    <div class="line"></div>
+    <div class="options">
+        <h2>Elige el departamento deseado</h2>
+        <div class="opciones">
+            <div class="grid-buttons" *ngFor="let opc of opciones">
+                <a >
+                    <img [src]="opc.image" alt="Boton-img" class="opcion">
+                    <h1>{{opc.name}}</h1>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
