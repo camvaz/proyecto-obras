@@ -4,13 +4,15 @@ import { MobileLoginComponent } from "./mobile-login/mobile-login.component";
 import { PageProyectosComponent } from "./page-proyectos/page-proyectos.component";
 import { PageProyectoComponent } from "./page-proyecto/page-proyecto.component";
 import { FormCrearProyectoComponent } from "./form-crear-proyecto/form-crear-proyecto.component";
+import { VistaSubirArchivosComponent} from "./vista-subir-archivos/vista-subir-archivos.component";
 
 const routes: Routes = [
   // {path:'', component:LoginComponent},
   { path: "", component: MobileLoginComponent },
   { path: "proyectos", component: PageProyectosComponent },
   { path: "proyecto", component: PageProyectoComponent },
-  { path: "crear-proyecto", component: FormCrearProyectoComponent }
+  { path: "crear-proyecto", component: FormCrearProyectoComponent },
+  { path: "subir-archivos", component: VistaSubirArchivosComponent}
 ];
 
 @NgModule({
