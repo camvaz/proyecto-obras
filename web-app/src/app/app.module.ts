@@ -9,6 +9,7 @@ import { ComponentesResueltosComponent } from './componentes-resueltos/component
 import { MobileLoginComponent } from './mobile-login/mobile-login.component';
 import { PageProyectosComponent } from './page-proyectos/page-proyectos.component';
 import { PageProyectoComponent } from './page-proyecto/page-proyecto.component';
+import { FormCrearProyectoComponent } from './form-crear-proyecto/form-crear-proyecto.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PageProyectoComponent } from './page-proyecto/page-proyecto.component';
     ComponentesResueltosComponent,
     MobileLoginComponent,
     PageProyectosComponent,
-    PageProyectoComponent
+    PageProyectoComponent,
+    FormCrearProyectoComponent
   ],
   imports: [
     BrowserModule,

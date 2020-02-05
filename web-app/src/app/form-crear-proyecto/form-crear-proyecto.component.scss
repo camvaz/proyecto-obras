@@ -1,0 +1,74 @@
+@import "../../styles.scss";
+
+.definicion-form {
+  width: 80%;
+  color: $rojo;
+  margin: auto;
+  h2 {
+    margin: 40px 0;
+    text-align: center;
+  }
+  .input {
+    border-radius: 3px;
+    // border-radius: .5em;
+    box-shadow: -3px -3px 3px 0 #ffffff, 3px 3px 3px 0 $cafe;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 0;
+    .descripcion {
+      width: 97%;
+      background-color: white;
+      font-size: 0.7em;
+      border: none;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      .tip {
+        height: 18px;
+        margin-right: 5px;
+        background-color: $rojo;
+        width: 2px;
+      }
+      p {
+        color: $rojo;
+        margin: 0px 0 3px 0px;
+      }
+    }
+    input {
+      border: 0;
+      height: 20px;
+      background-color: white;
+      width: 92%;
+      font-size: 0.8em;
+      margin: auto 10px;
+      margin-bottom: 2px;
+      border-radius: 2px;
+      //   border-bottom: solid $rojo 1px;
+    }
+  }
+  .grid-form {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    width: 70%;
+    margin: auto;
+    grid-column-gap: 20%;
+  }
+  .button-container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 50px 0;
+      button {
+        background-color: white;
+        color:$rojo;
+        border-color: white;
+        margin:auto;
+        width:180px;
+        height:30px;
+        border-radius: 3px;
+        // border-radius: .5em;
+        box-shadow: -3px -3px 3px 0 #ffffff, 3px 3px 3px 0 $cafe;
+      }
+  }
+}
