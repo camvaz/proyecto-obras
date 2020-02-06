@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
 
 @Component({
   selector: 'app-navbar',
@@ -23,7 +22,6 @@ export class NavbarComponent implements OnInit {
 
     document.querySelector("#submenu").addEventListener('mouseout', (event)=>{
       document.getElementById("submenu").style.display = "none";
-
       document.getElementById("primary-nav").style.height = "70px";
     })
   }
