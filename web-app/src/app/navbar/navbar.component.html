@@ -1,5 +1,9 @@
 <div class="definicion-header animated slideInDown faster">
-  <div class="primary-nav ">
+  <div id="submenu" class="submenu">
+    <a >Visualizar proyectos</a>
+    <a> Crear proyecto</a>
+  </div>
+  <div class="primary-nav " id="primary-nav">
     <div class="botones">
       <a [routerLink]="['/proyectos']" routerLinkActive="router-link-active"  class="boton">
         <img src="../../assets/icons/home-alt.png" alt="Portafolio" />
@@ -9,10 +13,6 @@
         <img src="../../assets/icons/briefcase.png" alt="" />
         <h4>Proyectos</h4>
       </a>
-      <div class="submenu">
-        <a >Visualizar proyectos</a>
-        <a> Crear proyecto</a>
-      </div>
     </div>
     <div class="logo">
       <a>
@@ -29,7 +29,7 @@
     <div class="lupa">
       <!-- <img src="../../assets/icons/search.png" alt=""> -->
     </div>
-    <div class="input"><input placeholder="Buscar..." type="text" /></div>
+    <div class="input" ><input  placeholder="Buscar..." type="text" /></div>
     <div class="logout">
       <a>
         <h3>Cerrar Sesión</h3>
