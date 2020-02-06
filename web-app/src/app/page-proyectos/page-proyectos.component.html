@@ -6,9 +6,20 @@
         <th *ngFor="let item of tableHeaders">{{ item }}</th>
       </tr>
       <tr *ngFor="let obra of obras">
-        <td>{{ obra.id }}</td>
-        <td>{{ obra.numObra }}</td>
-        <td>{{ obra.nombre }}</td>
+        <td>
+          <a [routerLink]="['/proyecto']" routerLinkActive="router-link-active">
+            {{ obra.id }}
+          </a>
+        </td>
+        <td>
+          {{ obra.numObra }}
+        </td>
+        <td>
+
+          <a [routerLink]="['/proyecto']" routerLinkActive="router-link-active">
+          {{ obra.nombre }}
+          </a>
+        </td>
         <td>{{ obra.ubicacion }}</td>
         <td>{{ obra.ejercicioFiscal }}</td>
         <td>{{ obra.programa }}</td>

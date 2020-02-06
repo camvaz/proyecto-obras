@@ -1,14 +1,18 @@
 <div class="definicion-header animated slideInDown faster">
   <div class="primary-nav ">
     <div class="botones">
-      <a class="boton">
+      <a [routerLink]="['/proyectos']" routerLinkActive="router-link-active"  class="boton">
         <img src="../../assets/icons/home-alt.png" alt="Portafolio" />
         <h4>Inicio</h4>
       </a>
-      <a class="boton">
+      <a id="proyectos" class="boton">
         <img src="../../assets/icons/briefcase.png" alt="" />
         <h4>Proyectos</h4>
       </a>
+      <div class="submenu">
+        <a >Visualizar proyectos</a>
+        <a> Crear proyecto</a>
+      </div>
     </div>
     <div class="logo">
       <a>
