@@ -119,12 +119,21 @@
       }
     }
     .logout {
-      width: 8vw;
+      width: 11vw;
       background-color: $cafe;
+      display:flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      img{
+        width:16px;
+        height:16px;
+        margin:auto 10px 0 0;
+      }
       h3 {
         font-size: 1em;
-        margin: 3px 0;
-        height: 30px;
+        margin: 0;
+        margin-bottom: 3px;
         color: white;
       }
     }

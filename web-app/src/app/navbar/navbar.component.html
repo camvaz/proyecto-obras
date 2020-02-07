@@ -1,21 +1,21 @@
 <div class="definicion-header animated slideInDown faster">
   <div id="submenu" class="submenu">
-    <a >Visualizar proyectos</a>
-    <a> Crear proyecto</a>
+    <a (click)="visualizarProyectos()">Visualizar proyectos</a>
+    <a (click)="crearProyecto()"> Crear proyecto</a >
   </div>
   <div class="primary-nav " id="primary-nav">
     <div class="botones">
-      <a [routerLink]="['/proyectos']" routerLinkActive="router-link-active"  class="boton">
+      <a [routerLink]="['/home']" routerLinkActive="router-link-active"  class="boton">
         <img src="../../assets/icons/home-alt.png" alt="Portafolio" />
         <h4>Inicio</h4>
       </a>
-      <a id="proyectos" class="boton">
+      <a id="proyectos" class="boton" (click)="visualizarProyectos()" >
         <img src="../../assets/icons/briefcase.png" alt="" />
         <h4>Proyectos</h4>
       </a>
     </div>
     <div class="logo">
-      <a>
+      <a [routerLink]="['/home']" routerLinkActive="router-link-active" >
         <img src="../../assets/Logo/logo.png" alt="Logo" />
       </a>
     </div>
@@ -31,9 +31,13 @@
     </div>
     <div class="input" ><input  placeholder="Buscar..." type="text" /></div>
     <div class="logout">
+      <a >
+        <img src="../../assets/icons/bell.svg" alt="">
+      </a>
       <a>
         <h3>Cerrar Sesión</h3>
       </a>
     </div>
+
   </div>
 </div>
