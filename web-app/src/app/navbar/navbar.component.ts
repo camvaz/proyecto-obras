@@ -17,6 +17,11 @@ export class NavbarComponent implements OnInit {
         document.getElementById("primary-nav").style.height = "100px";
       });
 
+    document.querySelector("#proyectos").addEventListener("mouseout", event => {
+      document.getElementById("submenu").style.display = "none";
+      document.getElementById("primary-nav").style.height = "70px";
+    });
+    
     document.querySelector("#submenu").addEventListener("mouseover", event => {
       document.getElementById("submenu").style.display = "flex";
       document.getElementById("primary-nav").style.height = "100px";
