@@ -57,18 +57,19 @@
   .button-container {
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin: 50px 0;
     button {
-      background-color: white;
-      color: $rojo;
+      background-color: $rojo;
+      color: #f1f1f1;
       border-color: transparent;
       margin: auto;
-      width: 180px;
-      height: 30px;
+      width: 190px;
+      height: 35px;
+      font-size: 0.8em;
       border-radius: 3px;
       // border-radius: .5em;
-      box-shadow: -3px -3px 3px 0 #ffffff, 3px 3px 3px 0 $rojo;
+      // box-shadow: -3px -3px 3px 0 #ffffff, 3px 3px 3px 0 $rojo;
     }
   }
 }

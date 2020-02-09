@@ -13,6 +13,7 @@ import { FormCrearProyectoComponent } from './form-crear-proyecto/form-crear-pro
 import { VistaSubirArchivosComponent } from './vista-subir-archivos/vista-subir-archivos.component';
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
+import { PerfilDepartamentoComponent } from './perfil-departamento/perfil-departamento.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SearchComponent } from './search/search.component';
     FormCrearProyectoComponent,
     VistaSubirArchivosComponent,
     HomeComponent,
-    SearchComponent
+    SearchComponent,
+    PerfilDepartamentoComponent
   ],
   imports: [
     BrowserModule,

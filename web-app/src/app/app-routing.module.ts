@@ -7,6 +7,7 @@ import { FormCrearProyectoComponent } from "./form-crear-proyecto/form-crear-pro
 import { VistaSubirArchivosComponent} from "./vista-subir-archivos/vista-subir-archivos.component";
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
+import { PerfilDepartamentoComponent } from './perfil-departamento/perfil-departamento.component';
 
 const routes: Routes = [
   // {path:'', component:LoginComponent},
@@ -15,8 +16,9 @@ const routes: Routes = [
   { path: "proyectos", component: PageProyectosComponent },
   { path: "proyecto", component: PageProyectoComponent },
   { path: "crear-proyecto", component: FormCrearProyectoComponent },
+  { path: "perfil-departamentos", component: PerfilDepartamentoComponent},
   { path: "subir-archivos", component: VistaSubirArchivosComponent},
-  { path: "home", component: HomeComponent}
+  { path: "home", component: PageProyectosComponent }
 ];
 
 @NgModule({

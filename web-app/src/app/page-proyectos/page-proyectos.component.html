@@ -1,4 +1,16 @@
 <div class="definicion-proyectos animated fadeIn">
+  <ng-container *ngIf="boss.on">
+    <div class="definicion-perfil">
+      <div class="campo">
+        <h2>{{this.boss.cargo}}:</h2>
+        <p>{{this.boss.nombre}}</p>
+      </div>
+      <div class="campo">
+        <h2 class="proyectos">Proyectos asignados:</h2>
+        <p>{{this.obras.length}}</p>
+      </div>
+    </div>
+  </ng-container>
   <h1 class="titulo">Proyectos actuales</h1>
   <div class="tabla-container">
     <table>
@@ -38,3 +50,4 @@
     <div class="right"></div>
   </div>
 </div>
+

@@ -21,7 +21,7 @@ export class NavbarComponent implements OnInit {
       document.getElementById("submenu").style.display = "none";
       document.getElementById("primary-nav").style.height = "70px";
     });
-    
+
     document.querySelector("#submenu").addEventListener("mouseover", event => {
       document.getElementById("submenu").style.display = "flex";
       document.getElementById("primary-nav").style.height = "100px";
@@ -34,7 +34,7 @@ export class NavbarComponent implements OnInit {
   }
 
   visualizarProyectos() {
-    this.router.navigate(["/proyectos"]);
+    this.router.navigateByUrl("/proyectos",{ state: { boss: false } });
 
     document.getElementById("submenu").style.display = "none";
     document.getElementById("primary-nav").style.height = "70px";
