@@ -7,6 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VistaSubirArchivosComponent implements OnInit {
 
+  uploadFile($event) {
+      console.log($event.target.files[0]); // outputs the first file
+  }
+
+  fileToUpload: File = null;
+
+  handleFileInput(files: FileList) {
+    this.fileToUpload = files.item(0);
+}
+
+
+
   constructor() { }
 
   ngOnInit() {
