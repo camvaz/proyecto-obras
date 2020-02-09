@@ -33,6 +33,12 @@ export class NavbarComponent implements OnInit {
     });
   }
 
+  subirArchivos(){
+    this.router.navigateByUrl("/subir-archivos",{ state: { boss: false } });
+
+    document.getElementById("submenu").style.display = "none";
+    document.getElementById("primary-nav").style.height = "70px";
+  }
   visualizarProyectos() {
     this.router.navigateByUrl("/proyectos",{ state: { boss: false } });
 
