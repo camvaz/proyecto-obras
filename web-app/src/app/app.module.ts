@@ -14,6 +14,7 @@ import { VistaSubirArchivosComponent } from './vista-subir-archivos/vista-subir-
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 import { PerfilDepartamentoComponent } from './perfil-departamento/perfil-departamento.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { PerfilDepartamentoComponent } from './perfil-departamento/perfil-depart
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
