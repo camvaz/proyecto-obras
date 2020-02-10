@@ -17,20 +17,20 @@ export class PageProyectosComponent implements OnInit {
   ngOnInit() {
     this.state = history.state;
     if (this.state.boss !== undefined) {
-      this.state.boss
+      this.state.boss === true
         ? (this.boss = {
-            on: false,
+            on: true,
             cargo: "Arquitecto",
             nombre: "KRAIZEN IVAN MARTINEZ"
           })
         : (this.boss = {
-            on: true,
+            on: false,
             cargo: "Arquitecto",
             nombre: "KRAIZEN IVAN MARTINEZ"
           });
     } else {
       this.boss = {
-        on: true,
+        on: false,
         cargo: "Arquitecto",
         nombre: "KRAIZEN IVAN MARTINEZ"
       };
