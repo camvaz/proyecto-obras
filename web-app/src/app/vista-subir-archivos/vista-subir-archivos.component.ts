@@ -8,8 +8,7 @@ import { FilesService } from '../services/files.service';
   styleUrls: ['./vista-subir-archivos.component.scss']
 })
 export class VistaSubirArchivosComponent implements OnInit {
-  nombreProyecto: string;
-  ubicacion:string;
+
   file: FileD = {
     id: null,
     nombre: null,
@@ -30,8 +29,6 @@ export class VistaSubirArchivosComponent implements OnInit {
   constructor(private fileService: FilesService) { }
 
   ngOnInit() {
-    this.nombreProyecto = "MEJORAMIENTO DE LA IMAGEN URBANA Y REHABILITACIÓN DE INSTALACIONES ELECTRICAS, SANITARIAS Y MODULOS DE SANITARIOS EN EL MERCADO SAN BALTAZAR CAMPECHE";
-    this.ubicacion = "CALLE CUE MERLO N° 466 COLONIA SAN BALTAZAR, PUEBLA . PUE"
   }
 
   saveFile(){
