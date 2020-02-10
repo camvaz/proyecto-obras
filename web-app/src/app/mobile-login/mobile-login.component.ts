@@ -15,7 +15,7 @@ export class MobileLoginComponent implements OnInit {
   login() {
     document.querySelector("#tarjeta").classList.add("slideOutUp");
     setTimeout(() => {
-    this.router.navigateByUrl("/home");
+    this.router.navigateByUrl("home", {state:{boss:true, id:1}});
     }, 400);
   }
 
