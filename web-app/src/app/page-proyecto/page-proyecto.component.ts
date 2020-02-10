@@ -24,7 +24,7 @@ export class PageProyectoComponent implements OnInit {
 
       proyectos: [1, 1, 1, 0, 0, 1, 0, 1, 1, 0],
 
-      costos: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+      costos: [1, 1, 1, 1, 1, 1, 1, 1, 0, 1]
     };
     this.progresos = [
       this.proyecto.planeacion.filter(e=>e===1).length * 10,
