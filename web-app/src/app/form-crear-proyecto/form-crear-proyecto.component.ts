@@ -22,7 +22,7 @@ export class FormCrearProyectoComponent implements OnInit, AfterViewInit {
 
   mapOptions: google.maps.MapOptions = {
    center: this.coordinates,
-   zoom: 20
+   zoom: 16
   };
 
   marker = new google.maps.Marker({
