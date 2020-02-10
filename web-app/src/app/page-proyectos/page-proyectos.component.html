@@ -2,12 +2,12 @@
   <ng-container *ngIf="boss.on">
     <div class="definicion-perfil">
       <div class="campo">
-        <h2>{{this.boss.cargo}}:</h2>
-        <p>{{this.boss.nombre}}</p>
+        <h2>{{ this.boss.cargo }}:</h2>
+        <p>{{ this.boss.nombre }}</p>
       </div>
       <div class="campo">
         <h2 class="proyectos">Proyectos asignados:</h2>
-        <p>{{this.obras.length}}</p>
+        <p>{{ this.obras.length }}</p>
       </div>
     </div>
   </ng-container>
@@ -27,16 +27,24 @@
           {{ obra.numObra }}
         </td>
         <td>
-
           <a [routerLink]="['/proyecto']" routerLinkActive="router-link-active">
-          {{ obra.nombre }}
+            {{ obra.nombre }}
           </a>
         </td>
         <td>{{ obra.ubicacion }}</td>
         <td>{{ obra.ejercicioFiscal }}</td>
         <td>{{ obra.programa }}</td>
-        <td>{{ obra.responsable }}</td>
-        <td>{{ obra.progreso }}</td>
+        <td>
+          <a [routerLink]="['/proyectos']" [state]="{boss:true,id:1}" routerLinkActive="router-link-active" >
+
+            {{ obra.responsable }}
+          </a>
+        </td>
+        <td>
+          <div class="progreso" [style.width.%]="this.obra.progreso">
+            {{ this.obra.progreso }}%
+          </div>
+        </td>
       </tr>
     </table>
   </div>
@@ -50,4 +58,3 @@
     <div class="right"></div>
   </div>
 </div>
-

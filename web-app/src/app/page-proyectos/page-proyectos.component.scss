@@ -10,27 +10,26 @@
     margin: 60px 0 0;
     color: $rojo;
   }
-  .definicion-perfil{
+  .definicion-perfil {
     width: 100%;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
-    margin:auto;
-    .campo{
-      margin:20px 0 0;
-      display:flex;
+    margin: auto;
+    .campo {
+      margin: 20px 0 0;
+      display: flex;
       flex-direction: row;
       justify-content: space-around;
-      h2{
+      h2 {
         color: $rojo;
-        &.proyectos{
+        &.proyectos {
           margin: auto 20px auto;
         }
       }
-      p{
-        margin:28px 20px 0;
+      p {
+        margin: 28px 20px 0;
       }
-
     }
   }
   .tabla-container {
@@ -43,8 +42,18 @@
         padding: 20px 2px;
       }
       td {
-        padding: 20px 10px;
+        padding: 20px 15px;
         text-align: center;
+
+        .progreso {
+          width: 20px;
+          height: 15px;
+          margin: 20px 0;
+          background-color: #66bb6a;
+          color: #0c0c0c;
+          font-size: 0.6em;
+          text-align: center;
+        }
       }
       .line {
         width: 100%;

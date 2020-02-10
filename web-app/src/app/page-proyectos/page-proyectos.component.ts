@@ -21,18 +21,18 @@ export class PageProyectosComponent implements OnInit {
         ? (this.boss = {
             on: true,
             cargo: "Arquitecto",
-            nombre: "Martin Corona M"
+            nombre: "KRAIZEN IVAN MARTINEZ"
           })
         : (this.boss = {
             on: false,
             cargo: "Arquitecto",
-            nombre: "Martin Corona M"
+            nombre: "KRAIZEN IVAN MARTINEZ"
           });
     } else {
       this.boss = {
-        on: true,
+        on: false,
         cargo: "Arquitecto",
-        nombre: "Martin Corona M"
+        nombre: "KRAIZEN IVAN MARTINEZ"
       };
     }
 
@@ -51,32 +51,32 @@ export class PageProyectosComponent implements OnInit {
       {
         id: 1,
         numObra: 12345,
-        nombre: "Construccion de ciclopista",
-        ubicacion: "Calle 5 sur 1105, Centro, 72000 Puebla, Pue.",
+        nombre: "MEJORAMIENTO DE LA IMAGEN URBANA Y REHABILITACIÓN DE INSTALACIONES ELECTRICAS, SANITARIAS Y MODULOS DE SANITARIOS EN EL MERCADO SAN BALTAZAR CAMPECHE",
+        ubicacion: "CALLE CUE MERLO N° 466 COLONIA SAN BALTAZAR, PUEBLA . PUE",
         ejercicioFiscal: 2020,
-        programa: "FISM",
-        responsable: "Martin Corona M",
-        progreso: 100
+        programa: "FORTAMUN",
+        responsable: "KRAIZEN IVAN MARTINEZ ALTERNO 2",
+        progreso: 60
       },
       {
-        id: 1,
+        id: 2,
         numObra: 12345,
-        nombre: "Construccion de ciclopista",
-        ubicacion: "Calle 5 sur 1105, Centro, 72000 Puebla, Pue.",
+        nombre: 'MEJORAMIENTO DE LA IMAGEN URBANA Y REHABILITACIÓN DE INSTALACIONES ELECTRICAS, SANITARIAS Y MODULOS DE SANITARIOS EN EL  MERCADO LA LIBERTAD "EL CUEXCOMATE"',
+        ubicacion: "CALLE 3 NORTE 212 COLONIA LA LIBERTAD, PUEBLA PUE.",
         ejercicioFiscal: 2020,
-        programa: "FISM",
-        responsable: "Martin Corona M",
-        progreso: 100
+        programa: "FORTAMUN",
+        responsable: "KRAIZEN IVAN MARTINEZ ALTERNO 2",
+        progreso: 80
       },
       {
-        id: 1,
+        id: 3,
         numObra: 12345,
-        nombre: "Construccion de ciclopista",
-        ubicacion: "Calle 5 sur 1105, Centro, 72000 Puebla, Pue.",
+        nombre: "CONSTRUCCIÓN DE PARQUE BIBLIOTECA 2",
+        ubicacion: "Sin definir",
         ejercicioFiscal: 2020,
-        programa: "FISM",
-        responsable: "Martin Corona M",
-        progreso: 100
+        programa: "Participaciones",
+        responsable: "SISP",
+        progreso: 70
       }
     ];
   }

@@ -1,11 +1,11 @@
 <div class="definicion-header animated slideInDown faster">
   <div id="submenu" class="submenu">
-    <a (click)="subirArchivos()">Subir archivos</a>
+    <!-- <a (click)="subirArchivos()">Subir archivos</a> -->
     <a (click)="crearProyecto()"> Crear proyecto</a >
   </div>
   <div class="primary-nav " id="primary-nav">
     <div class="botones">
-      <a [routerLink]="['/home']" [state]="{boss:true,id:1}" routerLinkActive="router-link-active"  class="boton">
+      <a [routerLink]="['/home']" [state]="{boss:false,id:1}" routerLinkActive="router-link-active"  class="boton">
         <img src="../../assets/icons/home-alt.png" alt="Portafolio" />
         <h4>Inicio</h4>
       </a>
