@@ -15,4 +15,8 @@ export class FilesService {
     const headers = new HttpHeaders({'Content-Type': 'application/json'});
     return this.httpClient.post(this.API_ENDPOINT + '/File', file, {headers:headers} );
   }
+
+  saveAttachment(file: File) {
+    return this.httpClient.post(this.API_ENDPOINT + '/File', { fileContent: file });
+  }
 }

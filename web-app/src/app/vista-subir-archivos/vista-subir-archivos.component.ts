@@ -37,8 +37,34 @@ export class VistaSubirArchivosComponent implements OnInit {
 
   uploadFile($event) {
     console.log($event.target.files[0]); // outputs the first file
-    this.saveFile();
-}
+    var name = "";
+    var type = "";
+    var size;
+    var modifiedDate;
+    for (var i = 0; i < $event.target.files.length; i++) { 
+       name = $event.target.files[i].name;
+       type = $event.target.files[i].type;
+       size = $event.target.files[i].size;
+       modifiedDate = $event.target.files[i].lastModifiedDate;
+      
+      console.log ('Name: ' + name + "\n" + 
+        'Type: ' + type + "\n" +
+        'Last-Modified-Date: ' + modifiedDate + "\n" +
+        'Size: ' + Math.round(size / 1024) + " KB");
+    }
+    //this.saveFile();
+      this.file.nombre = name;
+      this.file.fecha = modifiedDate;
+      
+      this.fileService.save(this.file).subscribe((data) => {
+      alert('Archivo agregado');
+      console.log(data);
+    },  (error) => {
+      console.log(error);
+      alert('Ocurrio un error');
+    });
+
+  }
 
 
 
