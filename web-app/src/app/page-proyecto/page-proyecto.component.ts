@@ -16,15 +16,15 @@ export class PageProyectoComponent implements OnInit {
     this.proyecto = {
       nombre: "Construccion de ciclopista",
 
-      planeacion: [1, 0, 1, 1, 0, 0, 1, 1, 0, 1],
+      planeacion: [0, 0, 1, 1, 0, 0, 0, 1, 0, 1],
 
-      relacionesInstitucionales: [1, 0, 1, 1, 0, 0, 1, 1, 0, 1],
+      relacionesInstitucionales: [1, 1, 1, 0, 0, 0, 1, 1, 1, 1],
       
-      gestion: [1, 0, 1, 1, 0, 0, 1, 1, 0, 1],
+      gestion: [0, 0, 1, 0, 0, 0, 1, 1, 1, 1],
 
-      proyectos: [1, 0, 1, 1, 0, 0, 1, 1, 0, 1],
+      proyectos: [1, 1, 1, 0, 0, 1, 0, 1, 1, 0],
 
-      costos: [1, 0, 1, 1, 0, 0, 1, 1, 0, 1]
+      costos: [1, 1, 1, 1, 1, 1, 1, 1, 0, 1]
     };
     this.progresos = [
       this.proyecto.planeacion.filter(e=>e===1).length * 10,
