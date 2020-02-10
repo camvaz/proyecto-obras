@@ -80,4 +80,7 @@ export class PageProyectosComponent implements OnInit {
       }
     ];
   }
+  navegarBossTrue(){
+    this.router.navigateByUrl('/proyectos', {state:{boss:true, id:1}});
+  }
 }

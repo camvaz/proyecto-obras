@@ -35,9 +35,13 @@
         <td>{{ obra.ejercicioFiscal }}</td>
         <td>{{ obra.programa }}</td>
         <td>
-          <a [routerLink]="['/proyectos']" [state]="{boss:true,id:1}" routerLinkActive="router-link-active" >
-            {{ obra.responsable }}
-          </a>
+          <!-- <a [routerLink]="['/proyectos']" [state]="{boss:true,id:1}" routerLinkActive="router-link-active" > -->
+            <a (click)="navegarBossTrue()">
+
+              {{ obra.responsable }}
+            </a>
+          <!-- </a> -->
+
         </td>
         <td>
           <div class="progreso" [style.width.%]="this.obra.progreso">
