@@ -55,11 +55,18 @@
     width: auto;
     margin: auto;
     margin: 20px 0;
+
     .left,
     .right {
-      background-color: $rosa-alt;
-      width: 25px;
+      width: 15px;
       height: 25px;
+      margin: 2px 10px 0;
+      img{
+        width:15px;
+        height:15px;
+        // transform: rotate(180deg);
+        margin:auto 0;
+      }
     }
     .choices {
       a {
