@@ -1,8 +1,14 @@
 <div class="definicion-vista animated fadeIn faster">
     <h2>Departamento de Proyectos</h2>
     <div class="form">
-        <h3>Nombre del proyecto: {{nombreProyecto}}</h3>
-        <h3>Ubicacion: {{ubicacion}}</h3>  
+        <div class="descripcion">
+            <h3>Nombre del proyecto: </h3>
+            <p>{{nombreProyecto}}</p>
+        </div>
+        <div class="descripcion">
+            <h3>Ubicacion: </h3>  
+            <p>{{ubicacion}}</p>
+        </div>
     </div>
     <div class="grid-archivos">
         <a class="archivo" (click)="uploader.click()">

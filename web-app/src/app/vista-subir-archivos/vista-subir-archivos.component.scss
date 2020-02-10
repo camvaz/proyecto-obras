@@ -1,41 +1,50 @@
 @import "../../styles.scss";
 
-.definicion-vista{
-    width:90%;
-    margin: auto;
-    h2{
-        margin-top:60px;
-        text-align: center;
-        color: $rojo;
+.definicion-vista {
+  width: 90%;
+  margin: auto;
+  h2 {
+    margin-top: 60px;
+    text-align: center;
+    color: $rojo;
+  }
+  .form {
+    .descripcion {
+      display: flex;
+      flex-direction: row;
+      h3 {
+        width: 100px;
+        padding:0 10px;
+        font-size: 1em;
+      }
+      p{
+          width:970px;
+      }
     }
-    .form{
-        h3{
-            font-size: 1em;
-        }
-    }
-    .grid-archivos{
-        display:grid;
-        grid-template-columns: repeat(5,1fr);
-        margin:60px auto 0;
-        grid-row-gap: 20%;
-        
-        .archivo{
-            margin:0 5%;
-            display:flex;
-            flex-direction: column;
-            align-items: center;
-            border: solid black 1px;
-            background-color: #F3E4E4;
+  }
+  .grid-archivos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 60px auto 0;
+    grid-row-gap: 20%;
 
-            img{
-                width:30px;
-                height: 30px;
-                margin:10px 0 0;
-            }
-            h3{
-                margin:10px 0;
-                font-size: 0.8em;
-            }
-        }
+    .archivo {
+      margin: 0 5%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: solid black 1px;
+      background-color: #f3e4e4;
+
+      img {
+        width: 30px;
+        height: 30px;
+        margin: 10px 0 0;
+      }
+      h3 {
+        margin: 10px 0;
+        font-size: 0.8em;
+      }
     }
+  }
 }
