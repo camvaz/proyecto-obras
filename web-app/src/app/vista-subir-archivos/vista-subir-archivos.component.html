@@ -6,8 +6,9 @@
     </div>
     <div class="grid-archivos">
         <a class="archivo" (click)="uploader.click()">
-            <input hidden type="file" #uploader
-            (change)="uploadFile($event)" id="file" name="file"/>
+            <!-- handleFileInput($event.target.files) -->
+            <input hidden  accept=".docx,.doc,.pdf,.dwg,.pptx,.jpg,.png,.JPG,.PNG" type="file" #uploader
+            (change)="uploadFile($event); " id="file" name="file"/>
             <img src="../../assets/icons/file.svg" alt="file">
             <h3>Subir archivo</h3>
             <!-- <button (click)="uploader.click()">

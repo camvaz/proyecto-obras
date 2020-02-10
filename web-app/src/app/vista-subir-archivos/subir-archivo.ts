@@ -1,8 +1,9 @@
-export interface File{
+export interface FileD{
     id?: number;
-    nombre: string;
-    fecha: string;
-    path: string;
-    updated_at: string;
-    created_at: string;
+    nombre?: string;
+    fecha?: string;
+    path?: string;
+    fileToUpload: any;
+    updated_at?: string;
+    created_at?: string;
 }

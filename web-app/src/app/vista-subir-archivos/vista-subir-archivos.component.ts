@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { File } from './subir-archivo';
+import { FileD } from './subir-archivo';
 import { FilesService } from '../services/files.service';
 
 @Component({
@@ -9,14 +9,21 @@ import { FilesService } from '../services/files.service';
 })
 export class VistaSubirArchivosComponent implements OnInit {
 
-  file: File = {
+  file: FileD = {
     id: null,
     nombre: null,
     fecha: null,
     path: null,
+    fileToUpload: null,
     updated_at: null,
     created_at: null,
   };
+
+  selectedFile = null;
+
+  // proyecto-obras\web-app\src\assets\Files
+  basePath: string = "proyecto-obras/web-app/src/assets/Files/";
+  
 
 
   constructor(private fileService: FilesService) { }
@@ -36,7 +43,15 @@ export class VistaSubirArchivosComponent implements OnInit {
 
 
   uploadFile($event) {
+    console.log("Este es el archivo");
     console.log($event.target.files[0]); // outputs the first file
+    console.log("------------------");
+
+  this.selectedFile = <File>$event.target.files[0];
+  const fd = new FormData();
+  fd.append('file',this.selectedFile,this.selectedFile.name);
+    console.log(fd);
+
     var name = "";
     var type = "";
     var size;
@@ -55,6 +70,8 @@ export class VistaSubirArchivosComponent implements OnInit {
     //this.saveFile();
       this.file.nombre = name;
       this.file.fecha = modifiedDate;
+
+      this.file.fileToUpload = <File>$event.target.files[0];
       
       this.fileService.save(this.file).subscribe((data) => {
       alert('Archivo agregado');
@@ -65,7 +82,6 @@ export class VistaSubirArchivosComponent implements OnInit {
     });
 
   }
-
 
 
 }

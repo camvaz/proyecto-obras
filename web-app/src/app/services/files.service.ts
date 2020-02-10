@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { File } from '../vista-subir-archivos/subir-archivo';
+import { FileD } from '../vista-subir-archivos/subir-archivo';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable({
@@ -11,12 +11,12 @@ export class FilesService {
   get(){
     return this.httpClient.get(this.API_ENDPOINT + '/File')
   }
-  save(file: File) {
+  save(file: FileD) {
     const headers = new HttpHeaders({'Content-Type': 'application/json'});
     return this.httpClient.post(this.API_ENDPOINT + '/File', file, {headers:headers} );
   }
 
-  saveAttachment(file: File) {
+  saveAttachment(file: FileD) {
     return this.httpClient.post(this.API_ENDPOINT + '/File', { fileContent: file });
   }
 }
