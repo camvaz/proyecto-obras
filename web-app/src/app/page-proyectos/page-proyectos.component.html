@@ -19,7 +19,7 @@
       </tr>
       <tr *ngFor="let obra of obras">
         <td>
-          <a [routerLink]="['/proyecto']" routerLinkActive="router-link-active">
+          <a [routerLink]="['/subir-archivos']" routerLinkActive="router-link-active">
             {{ obra.id }}
           </a>
         </td>
@@ -27,7 +27,7 @@
           {{ obra.numObra }}
         </td>
         <td>
-          <a [routerLink]="['/proyecto']" routerLinkActive="router-link-active">
+          <a [routerLink]="['/subir-archivos']" routerLinkActive="router-link-active">
             {{ obra.nombre }}
           </a>
         </td>
@@ -35,7 +35,7 @@
         <td>{{ obra.ejercicioFiscal }}</td>
         <td>{{ obra.programa }}</td>
         <td>
-          <a [routerLink]="['/proyectos']" [state]="{boss:true,id:1}" routerLinkActive="router-link-active" >
+          <a [routerLink]="['/subir-archivos']" [state]="{boss:true,id:1}" routerLinkActive="router-link-active" >
 
             {{ obra.responsable }}
           </a>

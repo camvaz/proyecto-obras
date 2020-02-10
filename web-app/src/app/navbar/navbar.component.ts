@@ -14,7 +14,7 @@ export class NavbarComponent implements OnInit {
       .querySelector("#proyectos")
       .addEventListener("mouseover", event => {
         document.getElementById("submenu").style.display = "flex";
-        document.getElementById("primary-nav").style.height = "80px";
+        document.getElementById("primary-nav").style.height = "100px";
       });
 
     document.querySelector("#proyectos").addEventListener("mouseout", event => {
@@ -24,7 +24,7 @@ export class NavbarComponent implements OnInit {
 
     document.querySelector("#submenu").addEventListener("mouseover", event => {
       document.getElementById("submenu").style.display = "flex";
-      document.getElementById("primary-nav").style.height = "80px";
+      document.getElementById("primary-nav").style.height = "100px";
     });
 
     document.querySelector("#submenu").addEventListener("mouseout", event => {
