@@ -5,14 +5,14 @@
         <h3>Ubicacion: {{ubicacion}}</h3>  
     </div>
     <div class="grid-archivos">
-        <a class="archivo">
+        <a class="archivo" (click)="uploader.click()">
             <input hidden type="file" #uploader
             (change)="uploadFile($event)" id="file" name="file"/>
             <img src="../../assets/icons/file.svg" alt="file">
             <h3>Subir archivo</h3>
-            <button (click)="uploader.click()">
+            <!-- <button (click)="uploader.click()">
                 Subir archivo
-               </button>
+               </button> -->
             <!-- <img src="../../assets/icons/file.svg" alt="file">
             <h3>Subir archivo</h3>
             <div class="form-group">
