@@ -1,6 +1,8 @@
-<div *ngIf="this.baseURL !== '/'">
-    <app-navbar></app-navbar>
+<div class="app-def">
+    <div *ngIf="this.baseURL !== '/'">
+        <app-navbar></app-navbar>
+    </div>
+    
+    
+    <router-outlet style="position:relative; z-index:-1;"></router-outlet>
 </div>
-
-
-<router-outlet ></router-outlet>

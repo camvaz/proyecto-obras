@@ -1,43 +1,72 @@
 <div class="definicion-header animated slideInDown faster">
   <div id="submenu" class="submenu">
     <!-- <a (click)="subirArchivos()">Subir archivos</a> -->
-    <a (click)="crearProyecto()"> Crear proyecto</a >
+    <a (click)="crearProyecto()"> Crear proyecto</a>
+  </div>
+  <div id="notificaciones" class="notificaciones animated faster">
+
+    <a>
+      <img src="../../assets/icons/briefcase.png" alt="calc" />
+      <p>Notificacion</p>
+    </a>
+    <a>
+      <img src="../../assets/icons/search-red.png" alt="calc" />
+      <p>Notificacion</p>
+    </a>
+    <a>
+      <img src="../../assets/icons/calculator.png" alt="calc" />
+      <p>Notificacion</p>
+    </a>
+    <a>
+      <img src="../../assets/icons/search-red.png" alt="calc" />
+      <p>Notificacion</p>
+    </a>
+    <a>
+      <img src="../../assets/icons/calculator.png" alt="calc" />
+      <p>Notificacion</p>
+    </a>
+    <a>
+      <img src="../../assets/icons/home.png" alt="calc" />
+      <p>Notificacion</p>
+    </a>
   </div>
   <div class="primary-nav " id="primary-nav">
     <div class="botones">
-      <a [routerLink]="['/home']" [state]="{boss:false,id:1}" routerLinkActive="router-link-active"  class="boton">
+      <a
+        [routerLink]="['/home']"
+        [state]="{ boss: false, id: 1 }"
+        routerLinkActive="router-link-active"
+        class="boton"
+      >
         <img src="../../assets/icons/home-alt.png" alt="Portafolio" />
         <h4>Inicio</h4>
       </a>
-      <a id="proyectos" class="boton" (click)="visualizarProyectos()" >
+      <a id="proyectos" class="boton" (click)="visualizarProyectos()">
         <img src="../../assets/icons/briefcase.png" alt="" />
         <h4>Proyectos</h4>
       </a>
     </div>
     <div class="logo">
-      <a [routerLink]="['/home']" routerLinkActive="router-link-active" >
+      <a [routerLink]="['/home']" routerLinkActive="router-link-active">
         <img src="../../assets/Logo/logo.png" alt="Logo" />
       </a>
     </div>
     <div class="texto">
-      <p>
-        Secretaria de Infraestructura <br>Direccion de Obras
-      </p>
+      <p>Secretaria de Infraestructura <br />Direccion de Obras</p>
     </div>
   </div>
   <div class="secondary-nav ">
     <div class="lupa">
-      <img src="../../assets/icons/search.png" alt="">
+      <img src="../../assets/icons/search.png" alt="search" />
     </div>
-    <div class="input" ><input  placeholder="Buscar..." type="text" /></div>
+    <div class="input"><input placeholder="Buscar..." type="text" /></div>
     <div class="logout">
-      <a >
-        <img src="../../assets/icons/bell.svg" alt="">
+      <a id="bell">
+        <img src="../../assets/icons/bell.svg" alt="bell" />
       </a>
-      <a [routerLink]="['/']" routerLinkActive="router-link-active" >
+      <a [routerLink]="['/']" routerLinkActive="router-link-active">
         <h3>Cerrar Sesión</h3>
       </a>
     </div>
-
   </div>
 </div>
