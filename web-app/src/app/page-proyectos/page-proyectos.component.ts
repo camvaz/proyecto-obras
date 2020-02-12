@@ -17,17 +17,20 @@ export class PageProyectosComponent implements OnInit {
   ngOnInit() {
     this.state = history.state;
     if (this.state.boss !== undefined) {
-      this.state.boss === true
-        ? (this.boss = {
-            on: true,
-            cargo: "Arquitecto",
-            nombre: "KRAIZEN IVAN MARTINEZ"
-          })
-        : (this.boss = {
-            on: false,
-            cargo: "Arquitecto",
-            nombre: "KRAIZEN IVAN MARTINEZ"
-          });
+      if (this.state.boss === true) {
+        this.boss = {
+          on: true,
+          cargo: "Arquitecto",
+          nombre: "KRAIZEN IVAN MARTINEZ"
+        };
+        document.getElementById("definicion-proyectos").style.height = "90vh";
+      } else {
+        this.boss = {
+          on: false,
+          cargo: "Arquitecto",
+          nombre: "KRAIZEN IVAN MARTINEZ"
+        };
+      }
     } else {
       this.boss = {
         on: false,
@@ -51,7 +54,8 @@ export class PageProyectosComponent implements OnInit {
       {
         id: 1,
         numObra: 12345,
-        nombre: "MEJORAMIENTO DE LA IMAGEN URBANA Y REHABILITACIÓN DE INSTALACIONES ELECTRICAS, SANITARIAS Y MODULOS DE SANITARIOS EN EL MERCADO SAN BALTAZAR CAMPECHE",
+        nombre:
+          "MEJORAMIENTO DE LA IMAGEN URBANA Y REHABILITACIÓN DE INSTALACIONES ELECTRICAS, SANITARIAS Y MODULOS DE SANITARIOS EN EL MERCADO SAN BALTAZAR CAMPECHE",
         ubicacion: "CALLE CUE MERLO N° 466 COLONIA SAN BALTAZAR, PUEBLA . PUE",
         ejercicioFiscal: 2020,
         programa: "FORTAMUN",
@@ -61,7 +65,8 @@ export class PageProyectosComponent implements OnInit {
       {
         id: 2,
         numObra: 12345,
-        nombre: 'MEJORAMIENTO DE LA IMAGEN URBANA Y REHABILITACIÓN DE INSTALACIONES ELECTRICAS, SANITARIAS Y MODULOS DE SANITARIOS EN EL  MERCADO LA LIBERTAD "EL CUEXCOMATE"',
+        nombre:
+          'MEJORAMIENTO DE LA IMAGEN URBANA Y REHABILITACIÓN DE INSTALACIONES ELECTRICAS, SANITARIAS Y MODULOS DE SANITARIOS EN EL  MERCADO LA LIBERTAD "EL CUEXCOMATE"',
         ubicacion: "CALLE 3 NORTE 212 COLONIA LA LIBERTAD, PUEBLA PUE.",
         ejercicioFiscal: 2020,
         programa: "FORTAMUN",
@@ -80,7 +85,7 @@ export class PageProyectosComponent implements OnInit {
       }
     ];
   }
-  navegarBossTrue(){
-    this.router.navigateByUrl('/proyectos', {state:{boss:true, id:1}});
+  navegarBossTrue() {
+    this.router.navigateByUrl("/proyectos", { state: { boss: true, id: 1 } });
   }
 }

@@ -1,8 +1,10 @@
-<div id="definicion-proyecto" class="definicion-proyecto animated fadeIn faster">
+<div
+  id="definicion-proyecto"
+  class="definicion-proyecto animated fadeIn faster"
+>
   <h1 class="titulo-1">{{ proyecto.nombre }}</h1>
   <h3 class="titulo-2">Documentos</h3>
   <table>
-
     <tr>
       <th>Departamentos</th>
       <th>1</th>
@@ -27,7 +29,9 @@
           <img src="../../assets/icons/close.svg" alt="File" />
         </ng-template>
       </td>
-      <div class="progreso" [style.width.%]="this.progresos[0]"> {{this.progresos[0]}}%</div>
+      <div class="progreso" [style.width.%]="this.progresos[0]">
+        {{ this.progresos[0] }}%
+      </div>
     </tr>
 
     <tr>
@@ -40,7 +44,9 @@
           <img src="../../assets/icons/close.svg" alt="File" />
         </ng-template>
       </td>
-      <div class="progreso" [style.width.%]="this.progresos[1]">{{this.progresos[1]}}%</div>
+      <div class="progreso" [style.width.%]="this.progresos[1]">
+        {{ this.progresos[1] }}%
+      </div>
     </tr>
     <tr>
       <td class="title-table">Gestion administrativa</td>
@@ -52,7 +58,9 @@
           <img src="../../assets/icons/close.svg" alt="File" />
         </ng-template>
       </td>
-      <div class="progreso" [style.width.%]="this.progresos[2]">{{this.progresos[2]}}%</div>
+      <div class="progreso" [style.width.%]="this.progresos[2]">
+        {{ this.progresos[2] }}%
+      </div>
     </tr>
     <tr>
       <td class="title-table">Proyectos</td>
@@ -64,7 +72,9 @@
           <img src="../../assets/icons/close.svg" alt="File" />
         </ng-template>
       </td>
-      <div class="progreso" [style.width.%]="this.progresos[3]">{{this.progresos[3]}}%</div>
+      <div class="progreso" [style.width.%]="this.progresos[3]">
+        {{ this.progresos[3] }}%
+      </div>
     </tr>
     <tr>
       <td class="title-table">Costos</td>
@@ -76,13 +86,15 @@
           <img src="../../assets/icons/close.svg" alt="File" />
         </ng-template>
       </td>
-      <div class="progreso" [style.width.%]="this.progresos[4]">{{this.progresos[4]}}%</div>
+      <div class="progreso" [style.width.%]="this.progresos[4]">
+        {{ this.progresos[4] }}%
+      </div>
     </tr>
   </table>
+
   <div class="pages">
     <div class="left">
-
-      <img src="../../assets/icons/flecha.svg"  alt="">
+      <img src="../../assets/icons/flecha.svg" alt="" />
     </div>
     <div class="choices">
       <a>1</a>
@@ -90,8 +102,11 @@
       <a>3</a>
     </div>
     <div class="right">
-
-      <img src="../../assets/icons/flecha.svg" style="transform: rotate(180deg);" alt="">
+      <img
+        src="../../assets/icons/flecha.svg"
+        style="transform: rotate(180deg);"
+        alt=""
+      />
     </div>
   </div>
 </div>

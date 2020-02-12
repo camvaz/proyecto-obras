@@ -17,14 +17,14 @@ export class FormCrearProyectoComponent implements OnInit, AfterViewInit {
   lng = -98.222634;
 
 
-
+  
   coordinates = new google.maps.LatLng(this.lat, this.lng);
 
   mapOptions: google.maps.MapOptions = {
    center: this.coordinates,
    zoom: 16
   };
-
+  
   marker = new google.maps.Marker({
     position: this.coordinates,
     map: this.map,
@@ -41,6 +41,7 @@ export class FormCrearProyectoComponent implements OnInit, AfterViewInit {
   }
   ngOnInit() {
     this.baseURL = window.location.pathname;
+    
   }
 
   ngDoCheck() {
