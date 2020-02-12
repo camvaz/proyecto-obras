@@ -77,13 +77,13 @@ export class NavbarComponent implements OnInit {
           window.location.pathname === "/proyectos" ||
           window.location.pathname === "/home"
         )
-          document.getElementById("definicion-proyectos").style.zIndex = "1";
+          document.getElementById("definicion-proyectos").style.zIndex = "0";
 
         if (window.location.pathname === "/proyecto")
-          document.getElementById("definicion-proyecto").style.zIndex = "1";
+          document.getElementById("definicion-proyecto").style.zIndex = "0";
 
         if (window.location.pathname === "/crear-proyecto")
-          document.getElementById("crear-proyecto").style.zIndex = "1";
+          document.getElementById("crear-proyecto").style.zIndex = "0";
       });
 
     // document.querySelector("#bell").addEventListener("mouseout", event => {
