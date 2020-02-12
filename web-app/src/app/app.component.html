@@ -5,4 +5,9 @@
     
     
     <router-outlet style="position:relative; z-index:-1;"></router-outlet>
+    
+    <div *ngIf="this.baseURL !== '/'">
+        <app-chat></app-chat>
+    </div>
+
 </div>

@@ -1,0 +1,81 @@
+@import "../../styles.scss";
+
+.definicion-chat {
+  width: 100%;
+
+  position: absolute;
+
+  bottom: 40px;
+  .chat {
+    margin-left: 70%;
+    .ventana {
+      width: 90%;
+      display: none;
+      flex-direction: column;
+      background-color: white;
+      border: solid black 1px;
+      .titulo {
+        background-color: $rojo;
+        border: solid black 1px;
+        h3 {
+          margin: 2px;
+          font-size: 1em;
+          color: white;
+        }
+      }
+      .mensajes {
+        display: flex;
+        flex-direction: column;
+        .mensaje {
+          background-color: #f1f1f1;
+          margin: 10px 10px;
+          border-radius: 5px;
+          width: 50%;
+          h3{
+            color:$rojo;
+            width: 100%;
+            margin: 5px auto 5px 10px;
+            font-size: 0.9em;
+          }
+          p {
+            width: 100%;
+            margin: 10px auto 10px 10px;
+            font-size: 0.8em;
+          }
+        }
+      }
+      .input-chat {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        border-top: solid black 1px;
+        input {
+          margin: 2px 5px;
+          font-size: 1em;
+          width: 90%;
+          border: none;
+        }
+        button {
+          font-size: 1em;
+          color: $rojo;
+          border: none;
+        }
+      }
+    }
+    .abrir-chat {
+      width: 90%;
+      height: auto;
+      h3 {
+        border: solid black 1px;
+        background-color: $rojo;
+        margin: 0;
+        padding: 0;
+        color: white;
+        text-align: center;
+        font-size: 1em;
+        width: 90%;
+      }
+    }
+  }
+}
