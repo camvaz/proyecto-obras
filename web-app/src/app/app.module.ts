@@ -16,6 +16,7 @@ import { SearchComponent } from './search/search.component';
 import { PerfilDepartamentoComponent } from './perfil-departamento/perfil-departamento.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ChatComponent } from './chat/chat.component';
+import { ProyectoProgramaComponent } from './proyecto-programa/proyecto-programa.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ChatComponent } from './chat/chat.component';
     HomeComponent,
     SearchComponent,
     PerfilDepartamentoComponent,
-    ChatComponent
+    ChatComponent,
+    ProyectoProgramaComponent
   ],
   imports: [
     BrowserModule,

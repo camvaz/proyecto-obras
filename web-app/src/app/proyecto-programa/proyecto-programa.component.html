@@ -1,0 +1,16 @@
+<div class="definicion-programas">
+    <h1>Proyectos por programa</h1>
+    <div class="programa" *ngFor="let programa of programas">
+        <div class="programa-nombre" id={{programa.nombre}}>
+            <h1>{{programa.nombre}}</h1>
+            <img src="../../assets/icons/flecha-arriba.png" id={{programa.nombre+2}} alt="Flecha">
+        </div>
+        <div class="proyectos" id={{programa.nombre+1}}>
+            <div class="linea"></div>
+            <div class="proyecto" *ngFor="let proyecto of programa.proyectos">
+                <h3 class="proyecto-id">{{proyecto.id}}</h3>
+                <h3 class="proyecto-nombre">{{proyecto.nombre}}</h3>
+            </div>
+        </div>
+    </div>
+</div>

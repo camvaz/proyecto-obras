@@ -8,6 +8,7 @@ import { VistaSubirArchivosComponent} from "./vista-subir-archivos/vista-subir-a
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 import { PerfilDepartamentoComponent } from './perfil-departamento/perfil-departamento.component';
+import { ProyectoProgramaComponent } from './proyecto-programa/proyecto-programa.component';
 
 const routes: Routes = [
   // {path:'', component:LoginComponent},
@@ -18,6 +19,8 @@ const routes: Routes = [
   { path: "crear-proyecto", component: FormCrearProyectoComponent },
   { path: "perfil-departamentos", component: PerfilDepartamentoComponent},
   { path: "subir-archivos", component: VistaSubirArchivosComponent},
+  { path: "proyecto-programa", component: ProyectoProgramaComponent},
+  { path: "search", component: SearchComponent},
   { path: "home", component: PageProyectosComponent }
 ];
 

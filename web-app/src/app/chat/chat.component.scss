@@ -3,8 +3,7 @@
 .definicion-chat {
   width: 100%;
   height: auto;
-  position: absolute;
-  bottom: auto;
+  position: sticky;
   .chat {
     margin-left: 70%;
     .ventana {
