@@ -15,7 +15,7 @@ export class ChatComponent implements OnInit {
       this.chatOpen = !this.chatOpen;
       if(this.chatOpen === true) {
         document.getElementById('ventana').style.display='flex'
-        document.getElementById('ventana').classList.add('slideInUp')
+        document.getElementById('ventana').classList.add('fadeIn')
       }
       else{
 
