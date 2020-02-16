@@ -5,7 +5,7 @@
             <h2>{{programa.nombre}}</h2>
             <img src="../../assets/icons/flecha-arriba.png" id={{programa.nombre+2}} alt="Flecha">
         </div>
-        <div class="proyectos" id={{programa.nombre+1}}>
+        <div class="proyectos animated faster" id={{programa.nombre+1}}>
             <div class="linea"></div>
             <div class="proyecto" *ngFor="let proyecto of programa.proyectos">
                 <h3 class="proyecto-id">{{proyecto.id}}</h3>

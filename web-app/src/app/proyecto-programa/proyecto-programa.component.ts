@@ -73,6 +73,7 @@ export class ProyectoProgramaComponent implements OnInit {
     this.programas.map(itr => {
       document.getElementById(itr.nombre).addEventListener("click", event =>{
         if(!itr.clicked){
+          document.getElementById(itr.nombre+1).classList.add("fadeIn");
           document.getElementById(itr.nombre+1).style.display = "flex";
           document.getElementById(itr.nombre+2).style.transform = "rotate(180deg)"
         } else {
