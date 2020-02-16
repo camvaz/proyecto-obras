@@ -17,9 +17,10 @@
         .programa-nombre{
             display:flex;
             flex-direction: row;
-            h1{
+            h2{
                 margin: 10px 0 10px 30px;
                 width: auto;
+                color: $rojo;
             }
             img{
                 height:20px;
