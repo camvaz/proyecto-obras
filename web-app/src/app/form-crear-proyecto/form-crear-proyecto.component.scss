@@ -12,7 +12,9 @@
   .input {
     border-radius: 3px;
     // border-radius: .5em;
-    box-shadow: -3px -3px 3px 0 #ffffff, 3px 3px 3px 0 $rojo;
+
+    box-shadow: 15px 15px 20px 0px rgb(235, 236, 240);
+    // box-shadow: -3px -3px 3px 0 #ffffff, 3px 3px 3px 0 $rojo;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -70,6 +72,7 @@
       height: 35px;
       font-size: 0.8em;
       border-radius: 3px;
+    box-shadow: 15px 15px 20px 0px rgb(235, 236, 240);
       // border-radius: .5em;
       // box-shadow: -3px -3px 3px 0 #ffffff, 3px 3px 3px 0 $rojo;
     }
