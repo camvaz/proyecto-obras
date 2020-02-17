@@ -34,16 +34,12 @@
     <div class="botones">
       <a
         [routerLink]="['/home']"
-        [state]="{ boss: false, id: 1 }"
+        [state]="{ boss: true, id: 1 }"
         routerLinkActive="router-link-active"
         class="boton"
       >
         <img src="../../assets/icons/home-alt.png" alt="Portafolio" />
         <h4>Inicio</h4>
-      </a>
-      <a id="proyectos" class="boton" (click)="visualizarProyectos()">
-        <img src="../../assets/icons/briefcase.png" alt="" />
-        <h4>Proyectos</h4>
       </a>
     </div>
     <div class="logo">
