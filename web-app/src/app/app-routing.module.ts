@@ -14,7 +14,7 @@ const routes: Routes = [
   // {path:'', component:LoginComponent},
   { path: "", component: MobileLoginComponent },
   { path: "search/:string", component: SearchComponent },
-  { path: "proyectos", component: ProyectoProgramaComponent },
+  { path: "proyectos", component: PageProyectosComponent },
   { path: "proyecto", component: PageProyectoComponent },
   { path: "crear-proyecto", component: FormCrearProyectoComponent },
   { path: "perfil-departamentos", component: PerfilDepartamentoComponent},

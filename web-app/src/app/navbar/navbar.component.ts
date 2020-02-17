@@ -110,7 +110,7 @@ export class NavbarComponent implements OnInit {
     document.getElementById("primary-nav").style.height = "70px";
   }
   visualizarProyectos() {
-    this.router.navigateByUrl("/proyectos", { state: { boss: false } });
+    this.router.navigateByUrl("/proyecto-programa", { state: { boss: false } });
 
     document.getElementById("submenu").style.display = "none";
     document.getElementById("primary-nav").style.height = "70px";
