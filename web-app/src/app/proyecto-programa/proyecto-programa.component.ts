@@ -75,10 +75,10 @@ export class ProyectoProgramaComponent implements OnInit {
         if(!itr.clicked){
           document.getElementById(itr.nombre+1).classList.add("fadeIn");
           document.getElementById(itr.nombre+1).style.display = "flex";
-          document.getElementById(itr.nombre+2).style.transform = "rotate(180deg)"
+          document.getElementById(itr.nombre+2).style.transform = "rotate(0deg)"
         } else {
           document.getElementById(itr.nombre+1).style.display = "none";
-          document.getElementById(itr.nombre+2).style.transform = "rotate(0deg)"
+          document.getElementById(itr.nombre+2).style.transform = "rotate(180deg)"
         }
         itr.clicked = !itr.clicked
       })
